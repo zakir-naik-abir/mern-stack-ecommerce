@@ -11,8 +11,15 @@
 body{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  color: rgba(0, 0, 0, 0.9);
   background-color: #f5f0f0;
+  overflow-x: hidden;
 }
+
+::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
+::-webkit-scrollbar-thumb{background: #ccc;}
+::-webkit-scrollbar-track{background: white;}
+
 
 .container{
   width: 90%; margin: auto;
@@ -22,7 +29,6 @@ body{
   font-size: 10px;
   font-weight: 200;
 }
-
 .link:hover{
  color: #ff5252;
 };
@@ -32,4 +38,69 @@ body{
 
 .text14{
   font-size: 14px;
+}
+
+nav ul button{
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+nav ul button:hover{
+  text-transform: capitalize !important;
+  color: #ff5252 !important;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 10px;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+  font-size: 23px !important;
+  color: black;
+}
+
+
+.homeCatSlider{
+  overflow: inherit !important;
+}
+.homeCatSlider .item{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.homeCatSlider .item:hover img{
+  transform: scale(1.1);
+}
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next{
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.homeCatSlider .swiper-button-prev::after, .homeCatSlider .swiper-button-next::after{
+  font-size: 16px !important;
+}
+.homeCatSlider .swiper-button-prev{
+  left: 0px !important;
+}
+.homeCatSlider .swiper-button-next{
+  right: 0px !important;
+}
+.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover{
+  background: #ff5252;
+}
+
+.smlBtn .swiper-button-prev, .smlBtn .swiper-button-next{
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+.smlBtn .swiper-button-prev::after, .smlBtn .swiper-button-next::after{
+  font-size: 16px !important;
 }
