@@ -14,7 +14,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="py-2">
+      <nav>
         <div className="container flex items-center justify-end">
           <div className="col_1 w-[20%]">
             <Button
@@ -31,12 +31,12 @@ const Navigation = () => {
             <ul className="flex items-center gap-3 nav">
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Home
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Home</Button>
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Fashion
+                <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Fashion</Button>
                 </Link>
 
                 <div className="submenu absolute min-w-[200px] bg-white shadow-md opacity-0 transition-all">
@@ -105,37 +105,42 @@ const Navigation = () => {
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Electronics
+                <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Electronics</Button>
+                  
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Bags
+                <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Bags</Button>
+                  
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Footwear
+                  
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Footwear</Button>
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Groceries
+                  
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Groceries</Button>
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Beauty
+                  
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Beauty</Button>
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Wellness
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Wellness</Button>
                 </Link>
               </li>
               <li className="list-none">
                 <Link to={"/"} className="link transition text14 font-[500]">
-                  Jewellery
+                  <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Jewellery</Button>
                 </Link>
               </li>
             </ul>

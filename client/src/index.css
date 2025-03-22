@@ -15,6 +15,12 @@ body{
   background-color: #f5f0f0;
   overflow-x: hidden;
 }
+p{
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 
 ::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
 ::-webkit-scrollbar-thumb{background: #ccc;}
@@ -28,10 +34,12 @@ body{
 .link{
   font-size: 10px;
   font-weight: 200;
+  transition: all;
 }
 .link:hover{
  color: #ff5252;
 };
+
 
 .muiBadge-badge{margin: 1px;}
 .MuiBadge-badge{background-color: #ff5252 !important;}
@@ -103,4 +111,16 @@ nav ul button:hover{
 }
 .smlBtn .swiper-button-prev::after, .smlBtn .swiper-button-next::after{
   font-size: 16px !important;
+}
+
+.MuiTabs-indicator{
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected{
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper{
+  padding: 15px;
+  margin-left: -15px; margin-right: -15px;
 }

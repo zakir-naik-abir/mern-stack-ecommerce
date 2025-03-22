@@ -19,7 +19,7 @@ const HomeCatSlider = () => {
         >
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center  flex flex-col">
                 <img
                   src="https://service.spicezgold.com/download/1741660962379_fash.png"
                   alt=""
@@ -31,7 +31,7 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex flex-col">
                 <img
                   src="https://service.spicezgold.com/download/1741660988059_ele.png"
                   alt=""
@@ -43,7 +43,7 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col  flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661045887_bag.png"
                   alt=""
@@ -55,7 +55,7 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661061379_foot.png"
                   alt=""
@@ -67,7 +67,7 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661077633_gro.png"
                   alt=""
@@ -79,7 +79,7 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661092792_beauty.png"
                   alt=""
@@ -91,19 +91,19 @@ const HomeCatSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col  flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661105893_well.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
-                <h3 className="text-[18px] font-medium mt-3">Wellness</h3>
+                <h3 className="text-[18px] font-medium mt-3 flex">Wellness</h3>
               </div>
             </Link>
           </SwiperSlide>
           <SwiperSlide>
             <Link to={'/'}>
-              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col">
+              <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
                   src="https://service.spicezgold.com/download/1741661120743_jw.png"
                   alt=""

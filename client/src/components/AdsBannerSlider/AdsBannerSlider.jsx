@@ -20,28 +20,17 @@ const AdsBannerSlider = (props) => {
         >
           
           <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1741669012402_banner1.webp'} link={'/'}/>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link={'/'}/>
           </SwiperSlide>
           <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1741669037986_banner2.webp'} link={'/'}/>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669037986_banner2.webp'} link={'/'}/>
           </SwiperSlide>
           <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1741669057847_banner5.webp'} link={'/'}/>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1741669057847_banner5.webp'} link={'/'}/>
           </SwiperSlide>
           <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1742453755529_1741669087880_banner6.webp'} link={'/'}/>
+            <BannerBox img={'https://serviceapi.spicezgold.com/download/1742453755529_1741669087880_banner6.webp'} link={'/'}/>
           </SwiperSlide>
-          
-          <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1741669037986_banner2.webp'}/>
-          </SwiperSlide>
-          <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1741669057847_banner5.webp'}/>
-          </SwiperSlide>
-          <SwiperSlide>
-            <BannerBox img={'https://service.spicezgold.com/download/1742453755529_1741669087880_banner6.webp'}/>
-          </SwiperSlide>
-          
           
         </Swiper>
     </div>
