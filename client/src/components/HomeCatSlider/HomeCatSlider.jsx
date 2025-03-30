@@ -21,7 +21,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center  flex flex-col">
                 <img
-                  src="https://service.spicezgold.com/download/1741660962379_fash.png"
+                  src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -33,7 +33,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex flex-col">
                 <img
-                  src="https://service.spicezgold.com/download/1741660988059_ele.png"
+                  src="https://serviceapi.spicezgold.com/download/1741660988059_ele.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -45,7 +45,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col  flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661045887_bag.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661045887_bag.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -57,7 +57,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661061379_foot.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661061379_foot.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -69,7 +69,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661077633_gro.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661077633_gro.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -81,7 +81,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661092792_beauty.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661092792_beauty.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -93,7 +93,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item  py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col  flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661105893_well.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661105893_well.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />
@@ -105,7 +105,7 @@ const HomeCatSlider = () => {
             <Link to={'/'}>
               <div className="item py-3 px-7 bg-white rounded-sm text-center items-center justify-center flex-col flex">
                 <img
-                  src="https://service.spicezgold.com/download/1741661120743_jw.png"
+                  src="https://serviceapi.spicezgold.com/download/1741661120743_jw.png"
                   alt=""
                   className="w-[60px] transition-all"
                 />

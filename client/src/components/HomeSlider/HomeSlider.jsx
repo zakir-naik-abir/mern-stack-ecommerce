@@ -28,7 +28,7 @@ const HomeSlider = () => {
         <SwiperSlide>
           <div className="item rounded-[20px] overflow-hidden">
           <img
-            src="https://service.spicezgold.com/download/1741660862304_NewProject(8).jpg"
+            src="https://serviceapi.spicezgold.com/download/1741660881858_NewProject(11).jpg"
             alt="Banner slide"
             className="w-full"
           />
@@ -38,7 +38,7 @@ const HomeSlider = () => {
         <div className="item rounded-[20px] overflow-hidden">
 
           <img
-            src="https://service.spicezgold.com/download/1741660777364_NewProject(12).jpg"
+            src="https://serviceapi.spicezgold.com/download/1741660777364_NewProject(12).jpg"
             alt="Banner slide"
             className="w-full"
           />
@@ -48,7 +48,7 @@ const HomeSlider = () => {
         <div className="item rounded-[20px] overflow-hidden">
 
           <img
-            src="https://service.spicezgold.com/download/1741660942872_NewProject(6).jpg"
+            src="https://serviceapi.spicezgold.com/download/1741660942872_NewProject(6).jpg"
             alt="Banner slide"
             className="w-full"
           />
@@ -58,7 +58,7 @@ const HomeSlider = () => {
         <div className="item rounded-[20px] overflow-hidden">
 
           <img
-            src="https://service.spicezgold.com/download/1741660907985_NewProject.jpg"
+            src="https://serviceapi.spicezgold.com/download/1741660862304_NewProject(8).jpg"
             alt="Banner slide"
             className="w-full"
           />
@@ -68,7 +68,7 @@ const HomeSlider = () => {
         <div className="item rounded-[20px] overflow-hidden">
 
           <img
-            src="https://service.spicezgold.com/download/1741660881858_NewProject(11).jpg"
+            src="https://serviceapi.spicezgold.com/download/1741660907985_NewProject.jpg"
             alt="Banner slide"
             className="w-full"
           />

@@ -5,9 +5,10 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 import { Link } from 'react-router-dom';
 import BannerBox from '../BannerBox/BannerBox';
+import BannerBoxV2 from '../BannerBoxV2/BannerBoxV2';
 
 
-const AdsBannerSlider = (props) => {
+const AdsBannerSliderV2 = (props) => {
   return (
     <div className='py-5'>
       <Swiper
@@ -20,16 +21,13 @@ const AdsBannerSlider = (props) => {
         >
           
           <SwiperSlide>
-            <BannerBox info='left' img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'} link={'/'}/>
+            <BannerBoxV2  img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-1.jpg'} link={'/'}/>
           </SwiperSlide>
           <SwiperSlide>
-            <BannerBox info='left' img={'https://serviceapi.spicezgold.com/download/1741669037986_banner2.webp'} link={'/'}/>
+            <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-2.jpg'} link={'/'}/>
           </SwiperSlide>
           <SwiperSlide>
-            <BannerBox info='left' img={'https://serviceapi.spicezgold.com/download/1741669057847_banner5.webp'} link={'/'}/>
-          </SwiperSlide>
-          <SwiperSlide>
-            <BannerBox info='left' img={'https://serviceapi.spicezgold.com/download/1742453755529_1741669087880_banner6.webp'} link={'/'}/>
+            <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-3.jpg'} link={'/'}/>
           </SwiperSlide>
           
         </Swiper>
@@ -37,4 +35,4 @@ const AdsBannerSlider = (props) => {
   )
 }
 
-export default AdsBannerSlider
+export default AdsBannerSliderV2

@@ -14,6 +14,9 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem/BlogItem";
 import Footer from "../../components/Footer/Footer";
+import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
+import BannerBoxV2 from "../../components/BannerBoxV2/BannerBoxV2";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2/AdsBannerSliderV2";
 
 
 const Home = () => {
@@ -24,8 +27,20 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <>
       <HomeSlider />
+
+      <section className="py-6">
+        <div className="container flex gap-4">
+          <div className="part1 w-[70%]">
+          <HomeSliderV2/>
+          </div>
+          <div className="part2 w-[30%] flex flex-col items-center justify-between">
+            <BannerBoxV2 info='left' img='https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg'/>
+            <BannerBoxV2 info='right' img='https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg'/>
+          </div>
+        </div>
+      </section>
       <HomeCatSlider />
 
       <section className="bg-white py-6">
@@ -77,7 +92,7 @@ const Home = () => {
             <p className="font-bold text-2xl">-Only $200</p>
           </div>
 
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={3} />
         </div>
       </section>
 
@@ -114,7 +129,7 @@ const Home = () => {
                     disableOnInteraction: false,
                   }}
                   navigation={true}
-                  modules={[Pagination, Navigation, Autoplay]}
+                  modules={[ Navigation, Autoplay]}
                   className="blogSlider"
                 >
                   <SwiperSlide>
@@ -139,11 +154,12 @@ const Home = () => {
                   
                 </Swiper>
         </div>
+        
+        
+
       </section>
 
-      <Footer/>
-
-    </div>
+    </>
   );
 };
 
