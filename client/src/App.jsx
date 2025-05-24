@@ -19,6 +19,7 @@ import ProductZoom from './components/ProductZoom/ProductZoom.jsx'
 import { IoMdClose } from "react-icons/io";
 import ProductDetailsComponent from './components/ProductDetails/ProductDetails.jsx'
 import Login from './Pages/Login/Login.jsx'
+import Register from './Pages/Register/Register.jsx'
 
 
 const MyContext = createContext();
@@ -50,7 +51,7 @@ function App() {
 
       <Route path='/product/:id' exact={true} element={<ProductDetails/>}/>
 
-      <Route path='/login' exact={true} element={<Login/>}/>
+      <Route path='/login' exact={true} element={<Login/>}/><Route path='/register' exact={true} element={<Register/>}/>
     </Routes>
     <Footer/>
     </MyContext.Provider>

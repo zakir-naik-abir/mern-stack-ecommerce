@@ -39,7 +39,7 @@ const Navigation = () => {
                 <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Fashion</Button>
                 </Link>
 
-                <div className="submenu absolute min-w-[200px] bg-white shadow-md opacity-0 transition-all">
+                <div className="submenu absolute min-w-[200px] bg-white shadow-md opacity-00 transition-all z-50">
                   <ul className="">
                     <li className="list-none w-full relative">
                       <Link to={"/"}>
@@ -47,7 +47,7 @@ const Navigation = () => {
                           Men
                         </Button>
 
-                        <div className="submenu absolute min-w-[200px] bg-white top-[00%] left-[100%] shadow-md opacity-0 transition-all">
+                        <div className="submenu absolute min-w-[200px] bg-white top-[00%] left-[100] shadow-md opacity-0 transition-all">
                           <ul className="">
                             <li className="list-none w-full">
                               <Link to={"/"}>
