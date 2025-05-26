@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
 import { IoWalletOutline } from "react-icons/io5";
@@ -13,8 +13,20 @@ import Checkbox from "@mui/material/Checkbox";
 import { CiFacebook, CiYoutube } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
+import { Drawer } from "@mui/material";
+
+import { MyContext } from "../../App.jsx";
+import CartPanel from "../CartPanel/CartPanel.jsx";
+
 
 const Footer = () => {
+   
+   const context = useContext(MyContext)
+
+  // const toggleCartPanel = (newOpen) => () => {
+  //   setOpenCartPanel(newOpen);
+  // };
   return (
     <>
       <footer className="py-6 bg-slate-50">
@@ -210,6 +222,26 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* cart */}
+      <Drawer
+        className="cartPanel w-full"
+        open={context.openCartPanel}
+        anchor={"right"}
+      >
+        <div className="flex items-center justify-between py-3 px-4 border-b border-gray-400 overflow-hidden">
+          <h4 className="flex items-center justify-between ">
+            Shopping Cart (1)
+          </h4>
+          <RxCross2
+            onClick={context.toggleCartPanel(false)}
+            className="cursor-pointer text-xl"
+          />
+        </div>
+
+        <CartPanel/>
+        
+      </Drawer>
     </>
   );
 };

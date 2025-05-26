@@ -5,6 +5,7 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from "./CategoryPanel";
+import "../Navigation/style.css";
 
 const Navigation = () => {
   const [isOpenCatPanel, setIsOpenCatPanel] = useState(false);
@@ -27,78 +28,94 @@ const Navigation = () => {
             </Button>
           </div>
 
-          <div className="col_2 w-[60%]">
+          <div className="col_2 w-[60%] z-50">
             <ul className="flex items-center gap-3 nav">
-              <li className="list-none">
+              <li className="list-none ">
                 <Link to={"/"} className="link transition text14 font-[500]">
                   <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Home</Button>
                 </Link>
               </li>
-              <li className="list-none">
-                <Link to={"/"} className="link transition text14 font-[500]">
-                <Button className="link transition !font-medium !text-[rgba(0,0,0,0.8)] !py-4">Fashion</Button>
+              <li className="list-none relative">
+                <Link to={"/"} className="link transition text14 font-[500] ">
+                <Button className="link transition  !font-medium !text-[rgba(0,0,0,0.8)] !py-4 ">Fashion</Button>
                 </Link>
 
-                <div className="submenu absolute min-w-[200px] bg-white shadow-md opacity-00 transition-all z-50">
+                <div className="submenu absolute top-[100%] left-[0%] min-w-[200px] bg-white shadow-md opacity- transition-all">
                   <ul className="">
                     <li className="list-none w-full relative">
-                      <Link to={"/"}>
+                      <Link to={"/"} className="w-full">
                         <Button className=" !text-gray-600 w-full !text-left !justify-start !rounded-none">
                           Men
                         </Button>
 
-                        <div className="submenu absolute min-w-[200px] bg-white top-[00%] left-[100] shadow-md opacity-0 transition-all">
+                        <div className="submenu absolute min-w-[200px] bg-white top-[0%] left-[100%] shadow-md opacity-0 transition-all">
                           <ul className="">
                             <li className="list-none w-full">
-                              <Link to={"/"}>
+                              <Link to={"/"} className="w-full">
                                 <Button className=" !text-gray-600 w-full !text-left !justify-start !rounded-none">
                                   T-Shirt
                                 </Button>
                               </Link>
                             </li>
                             <li className="list-none  w-full">
+                            <Link to={"/"} className="w-full">
                               <Button className=" !text-gray-600  w-full !text-left !justify-start">
                                 Jeans
                               </Button>
+                              </Link>
                             </li>
                             <li className="list-none w-full">
+                            <Link to={"/"} className="w-full">
                               <Button className=" !text-gray-600 w-full !text-left !justify-start">
                                 Footwear
                               </Button>
+                              </Link>
                             </li>
                             <li className="list-none w-full">
+                            <Link to={"/"} className="w-full">
                               <Button className=" !text-gray-600 w-full !text-left !justify-start">
                                 Watch
                               </Button>
+                              </Link>
                             </li>
                             <li className="list-none w-full">
+                            <Link to={"/"} className="w-full">
                               <Button className=" !text-gray-600 w-full !text-left !justify-start">
                                 Pens
                               </Button>
+                              </Link>
                             </li>
                           </ul>
                         </div>
                       </Link>
                     </li>
                     <li className="list-none  w-full">
+                    <Link to={"/"} className="w-full">
                       <Button className=" !text-gray-600  w-full !text-left !justify-start">
                         Women
                       </Button>
+                      </Link>
                     </li>
                     <li className="list-none w-full">
+                    <Link to={"/"} className="w-full">
                       <Button className=" !text-gray-600 w-full !text-left !justify-start">
                         Kids
                       </Button>
+                      </Link>
                     </li>
                     <li className="list-none w-full">
+                    <Link to={"/"} className="w-full">
                       <Button className=" !text-gray-600 w-full !text-left !justify-start">
                         Girls
                       </Button>
+                      </Link>
                     </li>
                     <li className="list-none w-full">
+                    <Link to={"/"} className="w-full">
                       <Button className=" !text-gray-600 w-full !text-left !justify-start">
                         Boys
                       </Button>
+                      </Link>
                     </li>
                   </ul>
                 </div>

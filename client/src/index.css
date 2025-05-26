@@ -257,3 +257,8 @@ input[type=number] {
 }
 
 .productDetailsModel .MuiDialogContent-root{padding: 0px !important;}
+
+
+.cartPanel .MuiPaper-root{
+  width: 400px;
+}

@@ -1,18 +1,22 @@
 .categoryPanel button{
   text-transform: capitalize !important;
 }
-/* .categoryPanel .submenu{
+
+
+ /* .categoryPanel .submenu{
   display: none;
 } */
- .nav  li .submenu{
-  visibility: hidden;
-  z-index: 1000;
+ 
+ .nav li .submenu{
+  visibility: hidden !important;
+  opacity: 0 !important;
+  /* z-index: 1000; */
  }
 
  .nav li:hover .submenu{
   opacity: 1 !important; 
-  visibility: inherit;
-  /* top: 100%; */
+  visibility: inherit !important;
+  top: 110% !important;
  }
 
  .nav  li .submenu button{
