@@ -262,3 +262,5 @@ input[type=number] {
 .cartPanel .MuiPaper-root{
   width: 400px;
 }
+
+.cartItem .MuiButtonBase-root{font-size: 12px;}
