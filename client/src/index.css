@@ -264,3 +264,7 @@ input[type=number] {
 }
 
 .cartItem .MuiButtonBase-root{font-size: 12px;}
+
+.otpBox input{border: 1px solid gray !important; outline: none !important; border-radius: 4px;}
+.otpBox input:focus{border: 1px gray !important;}
+.otpPage .container{height: 90vh; display: flex;}

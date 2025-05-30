@@ -1,20 +1,34 @@
-import React , { useState } from "react";
+import React , {  useContext, useState } from "react";
 import TextField from "@mui/material/TextField";
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 import { Button } from "@mui/material";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { MyContext } from "../../App";
 
 const Login = () => {
 
-  const [isShowPassword, setIsShowPassword] = useState();
+  const [isShowPassword, setIsShowPassword] = useState(false);
+  // const [formFields, setFormFields] = useState({
+  //   email:'',
+  //   password: ''
+  // });
+
+  const history = useNavigate();
+  const context = useContext(MyContext);
+  
+  const forgotPassword = () =>{
+    context.openAlertBox('success','OTP Send');
+    history("/verify");
+  }
 
   return (
     <section className="section py-10">
       <div className="container">
         <div className="card shadow-md m-auto rounded-md bg-white p-4 w-[500px] px-10">
           <h3 className="text-center">Login to your account</h3>
+
           <form className="w-full *:mb-5">
             <div className="w-full form-group">
               <TextField
@@ -23,6 +37,7 @@ const Login = () => {
                 label="User Email *"
                 variant="standard"
                 className="w-full"
+                name="name"
               />
             </div>
             <div className="w-full form-group relative">
@@ -32,6 +47,7 @@ const Login = () => {
                 label="User Password *"
                 variant="standard"
                 className="w-full"
+                name="password"
               />
               <Button onClick={() =>setIsShowPassword(!isShowPassword)} className='!absolute !top-5 !right-0 !rounded-full !h-9 !w-9 !min-w-9 z-50 !text-black'>
               {
@@ -39,7 +55,7 @@ const Login = () => {
               }
               </Button>
             </div>
-            <a href="#" className="link cursor-pointer  text-sm font-semibold ">Forgot Password</a>
+            <a onClick={forgotPassword} href="#" className="link cursor-pointer  text-sm font-semibold ">Forgot Password?</a>
             <div className="flex items-center mt-3">
               <Button className="btn-org w-full !btn-lg">
                 Login

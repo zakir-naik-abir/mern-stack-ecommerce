@@ -21,6 +21,8 @@ import ProductDetailsComponent from "./components/ProductDetails/ProductDetails.
 import Login from "./Pages/Login/Login.jsx";
 import Register from "./Pages/Register/Register.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
+import Verify from "./Pages/Verify/Verify.jsx";
+import toast, { Toaster } from 'react-hot-toast';
 
 const MyContext = createContext();
 
@@ -39,11 +41,21 @@ function App() {
     setOpenCartPanel(newOpen);
   };
 
+  const openAlertBox =(status, msg)=>{
+    if(status==='success'){
+      toast.success(msg);
+    }
+    if(status==='error'){
+      toast.error(msg)
+    }
+  }
+
   const values = {
     setOpenProductDetailsModal,
     setOpenCartPanel,
     toggleCartPanel,
     openCartPanel,
+    openAlertBox,
   };
 
   return (
@@ -76,6 +88,8 @@ function App() {
 
             <Route path="/cart" exact={true} element={<Cart />} />
 
+            <Route path="/verify" exact={true} element={<Verify />} />
+
 
 
           </Routes>
@@ -86,6 +100,7 @@ function App() {
 
       </BrowserRouter>
 
+      <Toaster/>
       
       <Dialog
         open={openProductDetailsModal}
