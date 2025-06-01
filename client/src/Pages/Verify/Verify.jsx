@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
 import OtpBox from '../../components/OtpBox/OtpBox'
+import Button from '@mui/material/Button';
+
 
 const Verify = () => {
 
   const [otp, setOtp] = useState('');
   const handleOtpChange = (value) =>{
     setOtp(value);
+  }
+
+  const verifyOTP = (e) =>{
+    e.preventDefault();
+    alert(otp)
   }
 
   return (
@@ -17,7 +24,16 @@ const Verify = () => {
           </div>
           <h3 className="text-center">Verify OTP</h3>
 
-          <OtpBox length={6} onChange={handleOtpChange} />
+          <p className='text-center p-2'>OTP sent to <span className='text-primary font-bold'>z@gmail.com</span></p>
+
+          <form onSubmit={verifyOTP}>
+          
+            <OtpBox length={6} onChange={handleOtpChange}/>
+
+          <div className="flex items-center justify-center mt-5 px-4">
+            <Button type='submit' className='w-full btn-org btn-lg'>Verify OTP</Button>
+          </div>
+          </form>
 
         </div>
       </div>

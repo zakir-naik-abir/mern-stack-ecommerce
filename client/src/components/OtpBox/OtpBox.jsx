@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const OtpBox = ({ length, onChange }) => {
+const OtpBox = ({ onChange, length,  }) => {
   const [otp, setOtp] = useState(new Array(length).fill(""));
 
   const handleChange = (element, index) => {
     const value = element.value;
-    if (isNaN(value)) return;
+    if(isNaN(value)) return;
 
     const newOtp = [...otp];
     newOtp[index] = value;
     setOtp(newOtp);
-    onchange(newOtp.join(""));
+    onChange(newOtp.join(''));
 
     if (value && index < length - 1) {
       document.getElementById(`otp-input-${index + 1}`).focus();
@@ -18,7 +18,7 @@ const OtpBox = ({ length, onChange }) => {
   };
 
   const handleKeyDown = (event, index) =>{
-    if(event.key === 'Backspace' && !otp[index] && index > 0){
+    if(event.key === "Backspace" && !otp[index] && index > 0){
       document.getElementById(`otp-input-
         ${index - 1}`).focus();
     }
@@ -32,15 +32,16 @@ const OtpBox = ({ length, onChange }) => {
       {otp.map((data, index) => (
         <input className="w-11 h-11 text-center text-base"
           key={index}
-          id={`otp-input${index}`}
+          id={`otp-input-${index}`}
           type="text"
           maxLength={"1"}
           value={otp[index]}
-          onchange={(e) => handleChange(e.target, index)}
+          onChange={(e) => handleChange(e.target, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
           
         />
       ))}
+      
     </div>
   );
 };
