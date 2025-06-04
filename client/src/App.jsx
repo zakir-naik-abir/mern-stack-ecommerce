@@ -6,7 +6,7 @@ import ProductListing from "./Pages/ProductListing/ProductListing.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails.jsx";
-import { createContext, useState } from "react";
+import { createContext, use, useState } from "react";
 
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
@@ -25,6 +25,9 @@ import Verify from "./Pages/Verify/Verify.jsx";
 import toast, { Toaster } from 'react-hot-toast';
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword.jsx";
 import Checkout from "./Pages/Checkout/Checkout.jsx";
+import MyList from "./Pages/MyList/MyList.jsx";
+import MyOrders from "./Pages/MyOrders/MyOrders.jsx";
+import MyAccount from "./Pages/MyAccount/MyAccount.jsx";
 
 const MyContext = createContext();
 
@@ -32,6 +35,7 @@ function App() {
   const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxWidth] = useState("lg");
+  const [isLogin, setIsLogin] = useState(true)
 
   const handleCloseProductDetailsModal = () => {
     setOpenProductDetailsModal(false);
@@ -58,6 +62,8 @@ function App() {
     toggleCartPanel,
     openCartPanel,
     openAlertBox,
+    isLogin,
+    setIsLogin,
   };
 
   return (
@@ -92,9 +98,15 @@ function App() {
 
             <Route path="/verify" exact={true} element={<Verify />} />
 
-            <Route path="/forgotPassword" exact={true} element={<ForgotPassword />} />
+            <Route path="/login/change-password" exact={true} element={<ForgotPassword />} />
 
             <Route path="/checkout" exact={true} element={<Checkout />} />
+            
+            <Route path="/my-account" exact={true} element={<MyAccount />} />
+            
+            <Route path="/my-orders" exact={true} element={<MyOrders />} />
+
+            <Route path="/my-list" exact={true} element={<MyList />} />
 
 
 

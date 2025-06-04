@@ -39,8 +39,21 @@ Button{
   padding: 7px 20px !important;
 }
 
+.btn-border{
+  color: #ff5252 !important;
+  background: none !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  padding: 7px 20px !important;
+  border: 1px solid #ff5252 !important;
+}
+
 .btn-org:hover{
   background-color: #171717 !important;
+}
+.btn-border:hover{
+  background-color: #171717 !important;
+  color: #fff !important;
 }
 .shadow-md, .shadow-lg{
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
@@ -49,12 +62,17 @@ Button{
 .btn-lg{
   font-size: 18px !important; padding: 10px 20px !important;
 }
+.btn-sm{
+  font-size: 12px !important; padding: 2px 9px !important;
+}
 
 .scroll::-webkit-scrollbar{width: 3px !important;}
 .scroll::-webkit-scrollbar-thumb{background: white !important;}
 ::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
-::-webkit-scrollbar-thumb{background: #ccc;}
+::-webkit-scrollbar-thumb{background: #ff5252;}
 ::-webkit-scrollbar-track{background: white;}
+
+.overflow-x-auto::-webkit-scrollbar-thumb{background: gray;}
 
 
 .container{
@@ -270,3 +288,15 @@ input[type=number] {
 
 /* .otpBox input:focus{border: 1px gray !important;} */
 .otpPage .container{height: 90vh; display: flex;}
+
+
+#account-menu .MuiPaper-root{
+  width: 160px !important;
+}
+
+.myAccountTabes li a{position: relative; display: block;}
+.myAccountTabes li a::before{content: ""; width: 3px; height: 50%; position: absolute; top: 0px; left: 0px;background: #ff5252; opacity: 0;}
+
+.myAccountTabes li a.active::before{height: 100%; opacity: 1; top: 0px;}
+
+.myAccountTabes li a.active button svg{color: #ff5252 !important; opacity: 1 !important;}

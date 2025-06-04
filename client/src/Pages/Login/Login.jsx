@@ -55,7 +55,10 @@ const Login = () => {
               }
               </Button>
             </div>
-            <a onClick={forgotPassword} href="#" className="link cursor-pointer  text-sm font-semibold ">Forgot Password?</a>
+            <div>
+              <a onClick={forgotPassword} href="#" className="link cursor-pointer  text-sm font-semibold ">Forgot Password?</a>
+              <Link to={'/login/change-password'}>Change Password</Link>
+            </div>
             <div className="flex items-center mt-3">
               <Button className="btn-org w-full !btn-lg">
                 Login
