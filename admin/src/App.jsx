@@ -20,6 +20,9 @@ function App() {
             <div className="sidebarWrapper w-[25%]">
               <Sidebar/>
             </div>
+            <div className="contentRight">
+              <Dashboard/>
+            </div>
           </div>
         </section>
         
