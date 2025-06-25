@@ -1,6 +1,12 @@
-body{font-family: 'Raleway, serif';}
+body{font-family: "Montserrat, serif"; background: #f1f1f1;}
 .MuiBadge-badge{background: red !important;}
 
 .ReactCollapse--collapse {
   transition: height 400ms;
 }
+
+.btn-blue{background: rgb(117, 117, 238) !important; color: white !important; }
+.btn-blue:hover{background: blue !important;}
+
+::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
+::-webkit-scrollbar-thumb{background: #ccc !important;}
